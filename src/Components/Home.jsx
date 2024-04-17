@@ -14,7 +14,7 @@ const Home = () => {
           <h2 className="text-3xl md:text-5xl mt-14 font-bold text-white ">
             I am Frontend Developer
           </h2>
-          <p className="text-gray-500 py-4 text-base max-w-md">
+          <p className="text-gray-500 py-4 text-base md:text-lg max-w-md">
             I am a Mechanical Engineering graduate with a passion for frontend
             development, blending analytical thinking with a strong design
             sense. Proficient in frontend technologies, I specialize in crafting
