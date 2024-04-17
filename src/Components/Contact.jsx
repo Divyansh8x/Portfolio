@@ -41,7 +41,7 @@ const Contact = () => {
           <p className="text-3xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <p className="py-6 text-lg text-gray-300">
+          <p className="py-6 text-base -mt-1 text-gray-300">
             Submit the form below to get in touch with me
           </p>
         </div>
