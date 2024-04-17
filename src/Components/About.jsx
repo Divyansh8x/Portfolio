@@ -13,7 +13,7 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-base md:text-xl text-gray-300 mt-4">
+        <p className="text-base md:text-xl text-gray-300 mt-8">
         As an aspiring Frontend Developer, I am passionate about crafting engaging and user-friendly web experiences. Armed with foundational knowledge in HTML, CSS, and JavaScript, as well as proficiency in React, Bootstrap, Tailwind CSS, and Material-UI, I am eager to learn and adapt to the fast-evolving world of web development. My enthusiasm for design and coding drives me to create clean, responsive, and accessible websites that prioritize user experience.
         </p>
 

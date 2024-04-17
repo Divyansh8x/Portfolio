@@ -55,7 +55,7 @@ const Projects = () => {
           <p className="text-3xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="py-6 text-base md:text-xl">
+          <p className="py-6 text-base -mt-1 md:text-xl">
             Check out some of my Projects Right Here
           </p>
         </div>
