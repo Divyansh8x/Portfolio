@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
-  const [formError, setFormError] = useState('');
+  const [formError, setFormError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,15 +20,15 @@ const Contact = () => {
     e.preventDefault();
 
     if (!formData.name || !formData.email || !formData.message) {
-      setFormError('Please fill out all fields first!');
+      setFormError("Please fill out all fields first!");
       return;
     }
     setFormData({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     });
-    setFormError('');
+    setFormError("");
   };
 
   return (
@@ -48,6 +48,8 @@ const Contact = () => {
 
         <div className=" flex justify-center items-center">
           <form
+            action="https://getform.io/f/qaloqwwb"
+            method="POST"
             onSubmit={handleSubmit}
             className="flex flex-col w-full md:w-1/2"
           >
@@ -76,16 +78,14 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 rounded-md border-gray-500 text-white focus:outline-none"
             ></textarea>
 
-            <button 
+            <button
               type="submit"
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
             >
               Let's talk
             </button>
-            
-            {formError && (
-              <p className="text-red-500">{formError}</p>
-            )}
+
+            {formError && <p className="text-red-500">{formError}</p>}
           </form>
         </div>
         <div>
