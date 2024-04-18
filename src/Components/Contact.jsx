@@ -16,25 +16,18 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
 
     if (!formData.name || !formData.email || !formData.message) {
       setFormError("Please fill out all fields first!");
       return;
     }
-    // Here you can handle the form submission if needed
     setFormData({
       name: "",
       email: "",
       message: "",
     });
     setFormError("");
-  };
-
-  const handleTalkButtonClick = () => {
-    // Handle your "Let's talk" button click action here
-    console.log("Let's talk clicked!");
   };
 
   return (
@@ -85,22 +78,14 @@ const Contact = () => {
             ></textarea>
 
             <button
-              type="submit"
+              type="submit" onClick={handleSubmit}
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
             >
-              Submit
+              Let's talk
             </button>
 
             {formError && <p className="text-red-500">{formError}</p>}
           </form>
-
-          <button
-            type="button"
-            onClick={handleTalkButtonClick}
-            className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
-          >
-            Let's talk
-          </button>
         </div>
         <div>
           <p className="text-center mt-24 text-gray-400">
