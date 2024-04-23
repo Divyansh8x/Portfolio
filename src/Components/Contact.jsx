@@ -14,6 +14,17 @@ const Contact = () => {
     const formData = new FormData(event.target);
     formData.append("access_key", "c4decdf2-e6bb-4637-be2e-fc6de77cfa9f");
 
+    // Simple form validation
+    if (
+      !formData.get("name") ||
+      !formData.get("email") ||
+      !formData.get("message")
+    ) {
+      setFormError("Please fill in all the fields.");
+      setLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
