@@ -96,7 +96,7 @@ const Contact = () => {
             {result && <p className="text-green-500">{result}</p>}
           </form>
         </div>
-        <div className="">
+        <div className="relative bottom-0">
       <ReactWhatsappButton
         countryCode="91"
         phoneNumber="7505507618"
