@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactWhatsappButton from "react-whatsapp-button"
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -95,6 +96,12 @@ const Contact = () => {
             {result && <p className="text-green-500">{result}</p>}
           </form>
         </div>
+        <div className="">
+      <ReactWhatsappButton
+        countryCode="91"
+        phoneNumber="7505507618"
+      />
+    </div>
         <div>
           <p className="text-center mt-24 text-gray-400">
             Copyright &#169;2024 Divyansh Singh Portfolio
