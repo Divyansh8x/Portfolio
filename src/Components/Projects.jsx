@@ -64,7 +64,7 @@ const Projects = () => {
           {projects.map(({ id, src, style}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
-              loading="lazy"
+              loading="eager"
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
