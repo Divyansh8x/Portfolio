@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import ReactWhatsappButton from "react-whatsapp-button"
+import ReactWhatsappButton from "react-whatsapp-button";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -51,7 +52,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-fit bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      className="w-full h-fit bg-gradient-to-b from-black to-gray-800 p-4 text-white relative"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
@@ -96,12 +97,15 @@ const Contact = () => {
             {result && <p className="text-green-500">{result}</p>}
           </form>
         </div>
-        <div className="relative bottom-0">
-      <ReactWhatsappButton
-        countryCode="91"
-        phoneNumber="7505507618"
-      />
-    </div>
+      
+        <div className="!absolute bottom-20 ">
+          <ReactWhatsappButton
+            countryCode="91"
+            phoneNumber="7505507618"
+            icon={<FaWhatsapp />}
+          />
+        </div>
+
         <div>
           <p className="text-center mt-24 text-gray-400">
             Copyright &#169;2024 Divyansh Singh Portfolio
