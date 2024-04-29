@@ -36,7 +36,7 @@ const Home = () => {
         </div>
         <div className="md:w-1/2 md:pl-8">
           <img
-          loading="eager"
+          loading="lazy"
             src={HeroImage}
             alt="my profile"
             className="w-full h-auto mt-10 rounded-2xl mx-auto md:w-full"
