@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 const SocialLinks = () => {
   const links = [
     {
@@ -31,17 +30,6 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://twitter.com/Divyansh1525",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "../assets/Resume.pdf",
-      style: "rounded-br-md",
-      download: true,
     },
   ];
 
