@@ -9,7 +9,7 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="w-full max-w-screen-xl flex flex-col mx-auto items-center justify-center h-full px-4 md:flex-row">
+      <div className="w-full max-w-screen-xl flex flex-col mx-auto items-center mb-[500px]  justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center md:w-1/2 md:pr-8 mt-20">
           <h2 className="text-3xl md:text-4xl mt-32 font-bold text-white ">
             I am a Frontend Developer
